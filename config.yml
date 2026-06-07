@@ -84,22 +84,24 @@ params:
 
 
     socialIcons:
-        - name: Email
-          url: mailto:wuebbena@ieg-mainz.de
         - name: Location
           url: location/
+        - name: Institutional Website
+          url: https://www.ieg-mainz.de/en/person/wuebbena/
+        - name: Mastodon
+          url: https://fedihum.org/@ThWuebbena
         - name: ORCID
           url: https://orcid.org/0000-0001-8172-6097
-        - name: Google Scholar
-          url: https://scholar.google.com/citations?user=GjBl3mQAAAAJ
         - name: Codeberg
           url: https://codeberg.org/wuebbena
         - name: GitHub
           url: https://github.com/wuebbena
-        - name: Mastodon
-          url: https://fedihum.org/@ThWuebbena
-        - name: Institutional Website
-          url: https://www.ieg-mainz.de/en/person/wuebbena/
+        - name: Google Scholar
+          url: https://scholar.google.com/citations?user=GjBl3mQAAAAJ
+        - name: LinkedIN
+          url: https://de.linkedin.com/in/thorsten-w%C3%BCbbena-7a632043
+        - name: Email
+          url: mailto:wuebbena@ieg-mainz.de
 
     assets:
         disableScrollBarStyle: true
