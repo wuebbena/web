@@ -62,7 +62,7 @@ params:
     profileMode:
           enabled: true
           title: Thorsten Wübbena
-          subtitle: "I head the DH Lab and the Digitality in Historical Research research group at the [Leibniz Institute for European History](https://www.ieg-mainz.de/en/) (Mainz)"
+          subtitle: "Head of the DH Lab and the Digitality in Historical Research research group at the [Leibniz Institute for European History](https://www.ieg-mainz.de/en/) (Mainz)"
           imageUrl: "picture.jpeg"
           imageWidth: 160
           imageHeight: 160
