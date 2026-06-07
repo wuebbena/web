@@ -4,4 +4,3 @@ description: "Publications"
 ---
 
 
-{{< bibtex >}}
