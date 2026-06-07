@@ -24,7 +24,7 @@ menu:
         - name: Data
           url: data/
           weight: 4 
-        - name: Projects (selection)
+        - name: Projects
           url: projects/
           weight: 5 
         - name: Memberships, committees, etc.
@@ -75,7 +75,7 @@ params:
               url: conferences/
             - name: Data, Software
               url: data/
-            - name: Projects (selection)
+            - name: Projects
               url: projects/
             - name: Memberships, committees, etc.
               url: memberships/

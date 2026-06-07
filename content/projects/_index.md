@@ -1,6 +1,6 @@
 ---
-title: "Projects (selection)"
-description: "Projects (selection)"
+title: "Projects"
+description: "Projects"
 ---
 
 ### Ongoing
