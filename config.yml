@@ -12,15 +12,9 @@ taxonomies:
 
 menu:
     main:
-        - name: Publications
+        - name: Publications, Talks etc.
           url: publications/
           weight: 1 
-        - name: Presentations
-          url: presentations/
-          weight: 2
-        - name: Organised conferences, etc.
-          url: conferences/
-          weight: 3 
         - name: Data
           url: data/
           weight: 4 
@@ -51,7 +45,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["publications","presentations", "conferences", "data", "projects", "memberships", "employment"]
+    MainSections: ["publications", "data", "projects", "memberships", "employment"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -69,10 +63,6 @@ params:
           buttons:
             - name: Publications
               url: publications/
-            - name: Presentations
-              url: presentations/
-            - name: Organised conferences etc.
-              url: conferences/
             - name: Data, Software
               url: data/
             - name: Projects
