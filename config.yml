@@ -61,7 +61,7 @@ params:
           imageWidth: 160
           imageHeight: 160
           buttons:
-            - name: Publications
+            - name: Publications, Talks etc.
               url: publications/
             - name: Data, Software
               url: data/
