@@ -3,6 +3,12 @@ title: "Publications"
 description: "Publications"
 ---
 
+
+
+
+<script src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fusers%2F918848%2Fcollections%2FV7VQHBSW%2Fitems%3Fkey%3DW9aezGBJK25EKnNB1y6Ephdl%26format%3Dbibtex%26limit%3D100&jsonp=1"></script> 
+
+
 ### Monographien
 * Keazor, Henry und Thorsten Wübbena: Video thrills the radio star: Musikvideos: Geschichte, Themen, Analysen, Kultur- und Medientheorie, 3. überarbeitete Aufl., Bielefeld: transcript 2011, https://doi.org/10.14361/transcript.9783839407288.  
 * Keazor, Henry und Thorsten Wübbena: Video thrills the radio star: Musikvideos: Geschichte Themen Analysen, Kultur- und Medientheorie, 2. überarbeitete Aufl., Bielefeld: transcript 2007, http://d-nb.info/983058776.  
