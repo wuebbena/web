@@ -24,12 +24,15 @@ menu:
         - name: Projects
           url: projects/
           weight: 4 
+        - name: Interviews | Clips | Misc
+          url: misc/
+          weight: 5 
         - name: Memberships, committees, etc.
           url: memberships/
-          weight: 5 
+          weight: 6 
         - name: Employment history
           url: employment/
-          weight: 6 
+          weight: 7 
 
 
 
@@ -48,7 +51,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["publications", "presentations", "data", "projects", "memberships", "employment"]
+    MainSections: ["publications", "presentations", "data", "projects", "misc", "memberships", "employment"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -72,6 +75,8 @@ params:
               url: data/
             - name: Projects
               url: projects/
+            - name: Interviews | Clips | Misc
+              url: misc/
             - name: Memberships, committees, etc.
               url: memberships/
             - name: Employment history
