@@ -21,12 +21,12 @@ menu:
         - name: Data | Software
           url: data/
           weight: 3 
-        - name: Projects
-          url: projects/
-          weight: 4 
         - name: Interviews | Clips | Misc
           url: misc/
-          weight: 5 
+          weight: 4 
+     - name: Projects
+          url: projects/
+          weight: 5
         - name: Memberships, committees, etc.
           url: memberships/
           weight: 6 
