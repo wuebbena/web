@@ -18,18 +18,18 @@ menu:
         - name: Presentations | Poster | Conferences | Workshops
           url: presentations/
           weight: 2 
-        - name: Data, Software
+        - name: Data | Software
           url: data/
-          weight: 4 
+          weight: 3 
         - name: Projects
           url: projects/
-          weight: 5 
+          weight: 4 
         - name: Memberships, committees, etc.
           url: memberships/
-          weight: 6 
+          weight: 5 
         - name: Employment history
           url: employment/
-          weight: 7 
+          weight: 6 
 
 
 
@@ -68,7 +68,7 @@ params:
               url: publications/
             - name: Presentations | Poster | Conferences | Workshops
               url: presentations/
-            - name: Data, Software
+            - name: Data | Software
               url: data/
             - name: Projects
               url: projects/
