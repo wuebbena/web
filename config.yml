@@ -12,9 +12,12 @@ taxonomies:
 
 menu:
     main:
+        - name: Publications
+          url: publications/
+          weight: 1
         - name: Poster
           url: poster/
-          weight: 1 
+          weight: 2 
         - name: Data
           url: data/
           weight: 4 
@@ -45,7 +48,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["poster", "data", "projects", "memberships", "employment"]
+    MainSections: ["publications", "poster", "data", "projects", "memberships", "employment"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -61,6 +64,8 @@ params:
           imageWidth: 160
           imageHeight: 160
           buttons:
+            - name: Publications
+              url: publications/
             - name: Poster
               url: poster/
             - name: Data, Software
