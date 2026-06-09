@@ -24,10 +24,10 @@ menu:
         - name: Interviews | Clips | Misc
           url: misc/
           weight: 4 
-     - name: Projects
+        - name: Projects
           url: projects/
           weight: 5
-        - name: Memberships, committees, etc.
+        - name: Memberships | Committees
           url: memberships/
           weight: 6 
         - name: Employment history
@@ -77,7 +77,7 @@ params:
               url: projects/
             - name: Interviews | Clips | Misc
               url: misc/
-            - name: Memberships, committees, etc.
+            - name: Memberships | Committees
               url: memberships/
             - name: Employment history
               url: employment/
