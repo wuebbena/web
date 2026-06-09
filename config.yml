@@ -15,7 +15,7 @@ menu:
         - name: Publications
           url: publications/
           weight: 1
-        - name: Presentations | Poster
+        - name: Presentations | Poster | Conferences | Workshops
           url: presentations/
           weight: 2 
         - name: Data, Software
@@ -66,7 +66,7 @@ params:
           buttons:
             - name: Publications
               url: publications/
-            - name: Presentations | Poster
+            - name: Presentations | Poster | Conferences | Workshops
               url: presentations/
             - name: Data, Software
               url: data/
