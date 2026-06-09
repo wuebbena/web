@@ -17,6 +17,6 @@ description: "Memberships, committees, etc."
 
 * Member of the Digital Humanities Specialists Board, »Shared Churches in Early Modern Europe« (2022–2026)
 * Member of the EOSC Future User Group (2021–2023)
-* Member of the editorial team of the science blog »Mittelalter. Interdisziplinäre Forschung und Rezeptionsgeschichte« (https://mittelalter.hypotheses.org/), Subject area: Digital Humanities (2019–2021)
+* Member of the editorial team of the science blog [»Mittelalter. Interdisziplinäre Forschung und Rezeptionsgeschichte«](https://mittelalter.hypotheses.org/), Subject area: Digital Humanities (2019–2021)
 * Founding member of the Digital Humanities Working Group at the Max Weber Foundation (2016–2019)
 * Member of the stakeholder panel »Wissenschaftliche Sammlungen« – DARIAH-DE, Cluster 4 (2014–2017)
