@@ -15,10 +15,10 @@ menu:
         - name: Publications
           url: publications/
           weight: 1
-        - name: Poster
-          url: poster/
+        - name: Presentations | Poster
+          url: presentations/
           weight: 2 
-        - name: Data
+        - name: Data, Software
           url: data/
           weight: 4 
         - name: Projects
@@ -48,7 +48,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["publications", "poster", "data", "projects", "memberships", "employment"]
+    MainSections: ["publications", "presentations", "data", "projects", "memberships", "employment"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -66,8 +66,8 @@ params:
           buttons:
             - name: Publications
               url: publications/
-            - name: Poster
-              url: poster/
+            - name: Presentations | Poster
+              url: presentations/
             - name: Data, Software
               url: data/
             - name: Projects
