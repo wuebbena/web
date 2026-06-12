@@ -5,31 +5,31 @@ description: "Projects"
 
 ### Ongoing
 
-* [ForNet](https://forgeries-and-networks.github.io/ForNetWeb/) – Forgeries and Networks. The »Mittheilungen des Museen-Verbandes« and counterfeiting networks in the twentieth Century (Förderung: DFG) (2024 – 2027)
+* [ForNet](https://forgeries-and-networks.github.io/ForNetWeb/) – Forgeries and Networks. The »Mittheilungen des Museen-Verbandes« and counterfeiting networks in the twentieth Century (Funding: DFG) (2024 – 2027)
 
-* [LivArch](https://www.ieg-mainz.de/research/research-projects/livarch-die-dokumentation-von-russlands-krieg-gegen-die-ukraine-die-herausforderungen-von-lebenden-archiven-fuer-die-historische-wissensproduktion/) – Documenting Russia’s war against Ukraine: The challenges of living archives for historical knowledge production (Förderung: Leibniz Kooperative Exzellenz) (2024 – 2027)
+* [LivArch](https://www.ieg-mainz.de/research/research-projects/livarch-die-dokumentation-von-russlands-krieg-gegen-die-ukraine-die-herausforderungen-von-lebenden-archiven-fuer-die-historische-wissensproduktion/) – Documenting Russia’s war against Ukraine: The challenges of living archives for historical knowledge production (Funding: Leibniz Cooperative Excellence) (2024 – 2027)
 
-* [HERMES](https://hermes-hub.de/) – Humanities Education in Research, Data, and Methods (Förderung: BMFTR, Programm zum Aufbau von Datenkompetenzzentren für die Wissenschaft) (2023 – 2026)
+* [HERMES](https://hermes-hub.de/) – Humanities Education in Research, Data, and Methods (Funding: Federal Ministry of Research, Technology and Space (BMFTR), Programme for the establishment of data competence centres for the scientific community) (2023 – 2026)
 
-* [NFDI4Memory](https://4memory.de/) (Förderung: DFG) (2023 – 2028)
+* [NFDI4Memory](https://4memory.de/) (Funding: DFG) (2023 – 2028)
 
 * [ConedaKOR](https://github.com/coneda/kor) (2009 –)
 
 ### Finished
 
-* [ConedaKOR-StatServ](https://dhlab.hypotheses.org/8265). Entwicklung eines nachhaltigen, statischen Services für ConedaKOR-Instanzen (Förderung: NFDI4Culture) (2025)
+* [ConedaKOR-StatServ](https://dhlab.hypotheses.org/8265). Entwicklung eines nachhaltigen, statischen Services für ConedaKOR-Instanzen (Funding: NFDI4Culture) (2025)
 
-* [DigiKAR](https://digikar.eu/) – Digitale Kartenwerkstatt Altes Reich (2021 – 2024)
+* [DigiKAR](https://digikar.eu/) – Digitale Kartenwerkstatt Altes Reich (Funding: Leibniz Cooperative Excellence) (2021 – 2024)
 
-* [FriVer+](https://friedensvertraege.ieg-mainz.de/) – Europäische Friedensverträge der Vormoderne online in Daten (Förderung: Text+) (2023)
+* [FriVer+](https://friedensvertraege.ieg-mainz.de/) – Europäische Friedensverträge der Vormoderne online in Daten (Funding: Text+) (2023)
 
-* HERMES – Humanities Education in Research, Data and Methods (Konzeptionsprojekt) (2022 – 23)
+* HERMES – Humanities Education in Research, Data and Methods (Conceptual design project) (2022 – 23)
 
 * [Bomber's Baedeker](https://github.com/ieg-dhr/bombers_baedeker) (2022 – 24)
 
 * [QTEI](https://github.com/ieg-dhr/QTEI) - Quick TEI (2022 – 24)
 
-* »ConedaKOR – Docker und Dokumentation« (Förderung: NFDI4Culture) (2022)
+* »ConedaKOR – Docker und Dokumentation« (Funding: NFDI4Culture) (2022)
 
 * Machbarkeitsstudie zur Aufarbeitung des Archivs der Städelschule 1920-1950 (2021 – 22)
 
@@ -63,7 +63,7 @@ description: "Projects"
 
 * »Forschungs- und Dokumentationsstelle Curatorial Studies« (2012 – 13)
 
-* DFG-Projekt »Zur ästhetischen Umsetzung von Musikvideos im Kontext von Handhelds«; Universität des Saarlands, Universität Heidelberg. (2011 – 2014) 
+* »Zur ästhetischen Umsetzung von Musikvideos im Kontext von Handhelds«; Universität des Saarlands, Universität Heidelberg. (Funding: DFG) (2011 – 2014) 
 
 * »OKA-Online«. Digitale Aufarbeitung des »Oswin-Köhler-Archivs« (2010 – 12)
 
@@ -71,7 +71,7 @@ description: "Projects"
 
 * »Kompetenzerwerb durch Partizipation – Vermittlung der Grundlagen wissenschaftlichen Sammelns, Ordnens und Verwaltens von kulturellen Gütern mit dem Datenbanksystem ConedaKOR« (2010 – 11)
 
-* DFG-Projekt »Sandrart.net. Eine netzbasierte Forschungsplattform zur Kunst- und Kulturgeschichte des 17. Jahrhunderts« (2007 – 12)
+* »Sandrart.net. Eine netzbasierte Forschungsplattform zur Kunst- und Kulturgeschichte des 17. Jahrhunderts« (Funding: DFG) (2007 – 12)
 
 * Digitalisierung und Verfügbarmachung der Sammlung von Kleinbilddias des Kunstgeschichtlichen Instituts der Goethe-Universität (2007 – 09)
 
