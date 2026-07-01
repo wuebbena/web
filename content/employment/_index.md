@@ -15,4 +15,4 @@ description: "Employment history"
   
 * **2007–2012** | Researcher in  the DFG project »[Sandrart.net. A net-based research platform on the history of art and cultural in the 17th century](https://sandrart.net/en/)« ; University of Frankfurt, KHI Florence (MPI), Städel Museum, Bibliotheca Hertziana Rome (MPI), Herzog August Library Wolfenbüttel (Project number 30903728).
   
-* **2000– 2019** |  Researcher at the [Institute of Art History at Goethe University Frankfurt]    (https://de.wikipedia.org/wiki/Kunstgeschichtliches_Institut_der_Johann_Wolfgang_Goethe-Universit%C3%A4t_Frankfurt_am_Main).
+* **2000– 2019** |  Researcher at the [Institute of Art History at Goethe University Frankfurt](https://de.wikipedia.org/wiki/Kunstgeschichtliches_Institut_der_Johann_Wolfgang_Goethe-Universit%C3%A4t_Frankfurt_am_Main).
