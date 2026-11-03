@@ -1,1 +1,49 @@
-
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://www.thorstenwuebbena.de/#person",
+  "name": "Thorsten Wübbena",
+  "url": "https://www.thorstenwuebbena.de/",
+  "image": "https://www.thorstenwuebbena.de/picture.jpeg",
+"jobTitle": "Professor of Digital Cultural Heritage",
+  "worksFor": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Mainz University of Applied Sciences",
+      "url": "https://www.hs-mainz.de/en/"
+    },
+    {
+      "@type": "EmployeeRole",
+      "roleName": "Head of the DH Lab",
+      "worksFor": {
+        "@type": "ResearchOrganization",
+        "name": "Leibniz Institute of European History (IEG)",
+        "url": "https://www.ieg-mainz.de/en/"
+      }
+    }
+  ], 
+  "knowsAbout": [
+    "Digital Humanities",
+    "Digital Cultural Heritage",
+    "Digital Art History",
+    "Graph-based image databases"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "ORCID",
+    "value": "0000-0001-8172-6097"
+  },
+  "sameAs": [
+    "https://orcid.org/0000-0001-8172-6097",
+    "https://www.ieg-mainz.de/en/person/wuebbena/",
+    "https://fedihum.org/@ThWuebbena",
+    "https://codeberg.org/wuebbena",
+    "https://github.com/wuebbena",
+    "https://scholar.google.com/citations?user=GjBl3mQAAAAJ",
+    "https://de.linkedin.com/in/thorsten-w%C3%BCbbena-7a632043"
+  ]
+}
+</script>
+{{ end }}
