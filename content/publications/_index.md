@@ -1,29 +1,30 @@
 ---
 title: "Publications"
-description: "Publications"
+description: "Publications by Thorsten Wübbena: articles, books, edited volumes, blog posts and digital editions."
 ---
 
-## Papers
+All publications as BibTeX: [publications.bib](/publications.bib)
 
-<script src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fusers%2F918848%2Fcollections%2FVFPFRVA7%2Fitems%3Fkey%3DW9aezGBJK25EKnNB1y6Ephdl%26format%3Dbibtex%26limit%3D100&jsonp=1&authorFirst=1&fullnames=1&noTitleLinks=true&hidemenu=true&theme=dividers"></script>   
+## Articles and research papers
+
+{{< publications types="article-journal,chapter,paper-conference" >}}
 
 ***
 ## Books
 
-<script src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fusers%2F918848%2Fcollections%2F795GZXK3%2Fitems%3Fkey%3DW9aezGBJK25EKnNB1y6Ephdl%26format%3Dbibtex%26limit%3D100&jsonp=1&authorFirst=1&fullnames=1&noTitleLinks=true&hidemenu=true&theme=dividers"></script>  
+{{< publications types="book" edited="exclude" >}}
 
 ***
 ## Edited volumes
 
-<script src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fusers%2F918848%2Fcollections%2FEQZGA25H%2Fitems%3Fkey%3DW9aezGBJK25EKnNB1y6Ephdl%26format%3Dbibtex%26limit%3D100&jsonp=1&authorFirst=1&fullnames=1&noTitleLinks=true&hidemenu=true&theme=dividers"></script>   
+{{< publications types="book" edited="only" >}}
 
 ***
 ## Blog posts
 
-<script src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fusers%2F918848%2Fcollections%2FMVJSQ6MG%2Fitems%3Fkey%3DW9aezGBJK25EKnNB1y6Ephdl%26format%3Dbibtex%26limit%3D100&jsonp=1&authorFirst=1&fullnames=1&noTitleLinks=true&hidemenu=true&theme=dividers"></script>  
+{{< publications types="post-weblog" >}}
 
 ***
 ## Digital editions
 
-<script src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fusers%2F918848%2Fcollections%2F9Y78QUKP%2Fitems%3Fkey%3DW9aezGBJK25EKnNB1y6Ephdl%26format%3Dbibtex%26limit%3D100&jsonp=1&authorFirst=1&fullnames=1&noTitleLinks=true&hidemenu=true&theme=dividers"></script>   
-
+{{< publications types="webpage" genre="Online-Edition" >}}

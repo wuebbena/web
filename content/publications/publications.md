@@ -1,25 +1,8 @@
 ---
-title: "Publications"
+title: "Publications (obsolete)"
+build:
+  render: never
+  list: never
 ---
 
-All publications as BibTeX: [publications.bib](/publications.bib)
-
-## Articles and research papers
-
-{{< publications types="article-journal,chapter,paper-conference" >}}
-
-## Books
-
-{{< publications types="book" edited="exclude" >}}
-
-## Edited volumes
-
-{{< publications types="book" edited="only" >}}
-
-## Blog posts
-
-{{< publications types="post-weblog" >}}
-
-## Digital editions
-
-{{< publications types="dataset,webpage,book" genre="Digital edition" >}}
+This file is obsolete; the list now lives in _index.md. You can delete this file.
