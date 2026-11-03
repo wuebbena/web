@@ -98,7 +98,7 @@ params:
           url: https://github.com/wuebbena
         - name: Google Scholar
           url: https://scholar.google.com/citations?user=GjBl3mQAAAAJ
-        - name: LinkedIN
+        - name: LinkedIn
           url: https://de.linkedin.com/in/thorsten-w%C3%BCbbena-7a632043
         - name: Email
           url: mailto:wuebbena@ieg-mainz.de
