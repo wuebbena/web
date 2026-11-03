@@ -1,5 +1,5 @@
 ---
-title: "Presentations, Poster, Conferences, Workshops"
+title: "Presentations, Posters, Conferences, Workshops"
 description: "Presentations, posters, and conferences and workshops organised by Thorsten Wübbena."
 ---
 
@@ -8,7 +8,7 @@ description: "Presentations, posters, and conferences and workshops organised by
 {{< publications collection="4JXEJ4CD" >}}
 
 ***
-## Poster
+## Posters
 
 {{< publications collection="V7VQHBSW" >}}
 
