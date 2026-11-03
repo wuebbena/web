@@ -48,18 +48,11 @@ This website is hosted on GitHub Pages, a service of GitHub, Inc., 88 Colin P. K
 
 The legal basis is Art. 6(1)(f) GDPR. My legitimate interest lies in providing this website reliably and securely. Data may be transferred to the USA. GitHub is certified under the EU-U.S. Data Privacy Framework; the transfer is based on the European Commission's adequacy decision (Art. 45 GDPR). Further information: [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
-### 4. Embedded third-party content
-
-When the following content is loaded, your browser connects to the respective provider's servers. At least your IP address is transmitted, which the provider needs to deliver the content.
-
-**Google Maps**  
-The "Location" page embeds a map from Google Maps, a service of Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. When you open this page, data including your IP address is transmitted to Google and may be transferred to servers of Google LLC in the USA. Google is certified under the EU-U.S. Data Privacy Framework. Further information: [Google Privacy Policy](https://policies.google.com/privacy).
-
-### 5. Contact by email
+### 4. Contact by email
 
 If you send me an email, I process your details solely to handle your request. The legal basis is Art. 6(1)(f) GDPR or, if your request relates to a contract or pre-contractual measures, Art. 6(1)(b) GDPR.
 
-### 6. Your rights
+### 5. Your rights
 
 Under the GDPR, you have the right of access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18) and data portability (Art. 20), as well as the right to object, on grounds relating to your particular situation, to processing based on Art. 6(1)(f) GDPR (Art. 21). To exercise these rights, simply contact me by email.
 
