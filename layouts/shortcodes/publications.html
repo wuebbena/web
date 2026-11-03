@@ -1,0 +1,83 @@
+{{- /*
+  Renders a publication list from data/publications.json (CSL-JSON, e.g. exported from Zotero).
+
+  Parameters:
+    types   comma-separated CSL types, e.g. "article-journal,chapter,paper-conference"
+    edited  "only"    -> only entries with editors but no authors (edited volumes)
+            "exclude" -> skip such entries
+            (omit)    -> no filter
+    genre   optional: only entries whose CSL "genre" equals this value,
+            e.g. "Digital edition" (set in Zotero via the Extra field: "genre: Digital edition")
+
+  Example:
+    {{< publications types="book" edited="exclude" >}}
+*/ -}}
+{{- $types := split (.Get "types") "," -}}
+{{- $edited := .Get "edited" -}}
+{{- $genre := .Get "genre" -}}
+{{- $items := slice -}}
+{{- range site.Data.publications -}}
+  {{- $ok := in $types .type -}}
+  {{- $isEdited := and (not .author) .editor -}}
+  {{- if and (eq $edited "only") (not $isEdited) }}{{ $ok = false }}{{ end -}}
+  {{- if and (eq $edited "exclude") $isEdited }}{{ $ok = false }}{{ end -}}
+  {{- if and $genre (ne .genre $genre) }}{{ $ok = false }}{{ end -}}
+  {{- if $ok -}}
+    {{- $year := 0 -}}
+    {{- with .issued }}{{ with index . "date-parts" }}{{ $year = index (index . 0) 0 }}{{ end }}{{ end -}}
+    {{- $items = $items | append (dict "year" $year "pub" .) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $items }}
+<ol class="publications" reversed>
+{{- range sort $items "year" "desc" }}
+  {{- $p := .pub }}
+  {{- $year := .year }}
+  {{- $people := $p.author | default $p.editor }}
+  {{- $names := slice }}
+  {{- range $people }}{{ $names = $names | append (printf "%s, %s" .family .given) }}{{ end }}
+  {{- $container := index $p "container-title" }}
+  {{- $place := index $p "publisher-place" }}
+  {{- $url := "" }}
+  {{- with $p.DOI }}{{ $url = printf "https://doi.org/%s" . }}{{ else }}{{ with $p.URL }}{{ $url = . }}{{ end }}{{ end }}
+
+  {{- /* COinS (OpenURL ContextObject) so Zotero & co. can detect the entry */}}
+  {{- $kv := slice "ctx_ver=Z39.88-2004" }}
+  {{- if eq $p.type "article-journal" }}
+    {{- $kv = $kv | append "rft_val_fmt=info:ofi/fmt:kev:mtx:journal" "rft.genre=article" (printf "rft.atitle=%s" (urlquery $p.title)) }}
+    {{- with $container }}{{ $kv = $kv | append (printf "rft.jtitle=%s" (urlquery .)) }}{{ end }}
+    {{- with $p.volume }}{{ $kv = $kv | append (printf "rft.volume=%s" (urlquery .)) }}{{ end }}
+    {{- with $p.issue }}{{ $kv = $kv | append (printf "rft.issue=%s" (urlquery .)) }}{{ end }}
+  {{- else if in (slice "chapter" "paper-conference") $p.type }}
+    {{- $kv = $kv | append "rft_val_fmt=info:ofi/fmt:kev:mtx:book" "rft.genre=bookitem" (printf "rft.atitle=%s" (urlquery $p.title)) }}
+    {{- with $container }}{{ $kv = $kv | append (printf "rft.btitle=%s" (urlquery .)) }}{{ end }}
+  {{- else if eq $p.type "book" }}
+    {{- $kv = $kv | append "rft_val_fmt=info:ofi/fmt:kev:mtx:book" "rft.genre=book" (printf "rft.btitle=%s" (urlquery $p.title)) }}
+  {{- else }}
+    {{- $kv = $kv | append "rft_val_fmt=info:ofi/fmt:kev:mtx:dc" (printf "rft.title=%s" (urlquery $p.title)) }}
+    {{- with $container }}{{ $kv = $kv | append (printf "rft.source=%s" (urlquery .)) }}{{ end }}
+  {{- end }}
+  {{- range $people }}{{ $kv = $kv | append (printf "rft.au=%s" (urlquery (printf "%s, %s" .family .given))) }}{{ end }}
+  {{- with $year }}{{ $kv = $kv | append (printf "rft.date=%d" (int .)) }}{{ end }}
+  {{- with $p.page }}{{ $kv = $kv | append (printf "rft.pages=%s" (urlquery .)) }}{{ end }}
+  {{- with $p.publisher }}{{ $kv = $kv | append (printf "rft.pub=%s" (urlquery .)) }}{{ end }}
+  {{- with $place }}{{ $kv = $kv | append (printf "rft.place=%s" (urlquery .)) }}{{ end }}
+  {{- with $p.ISBN }}{{ $kv = $kv | append (printf "rft.isbn=%s" (urlquery .)) }}{{ end }}
+  {{- with $p.DOI }}{{ $kv = $kv | append (printf "rft_id=%s" (urlquery (printf "info:doi/%s" .))) }}{{ end }}
+  {{- with $p.URL }}{{ $kv = $kv | append (printf "rft_id=%s" (urlquery .)) }}{{ end }}
+
+  <li id="{{ $p.id }}">
+    {{ delimit $names "; " }}{{ if and (not $p.author) $p.editor }} ({{ if gt (len $p.editor) 1 }}eds.{{ else }}ed.{{ end }}){{ end }}
+    {{- with $year }} ({{ int . }}){{ end }}:
+    {{ if $url }}<a href="{{ $url }}"><cite>{{ $p.title }}</cite></a>{{ else }}<cite>{{ $p.title }}</cite>{{ end }}.
+    {{- with $container }} In: <em>{{ . }}</em>{{ end }}
+    {{- with $p.volume }} {{ . }}{{ end }}{{ with $p.issue }} ({{ . }}){{ end }}
+    {{- if or $p.publisher $place }}{{ if $container }}.{{ end }} {{ with $place }}{{ . }}{{ if $p.publisher }}: {{ end }}{{ end }}{{ $p.publisher }}{{ end }}
+    {{- with $p.page }}, pp. {{ replace . "-" "–" }}{{ end }}.
+    {{- with $p.DOI }} DOI: <a href="https://doi.org/{{ . }}">{{ . }}</a>{{ end }}
+    <span class="Z3988" title="{{ delimit $kv "&" }}"></span>
+  </li>
+{{- end }}
+</ol>
+{{- end }}
