@@ -1,6 +1,6 @@
 ---
-title: "Memberships, committees, etc."
-description: "Memberships, committees, etc."
+title: "Memberships, committees, reviewer, etc."
+description: "Memberships, committees, reviewer, etc."
 ---
 
 
@@ -20,3 +20,10 @@ description: "Memberships, committees, etc."
 * Editorial team of the science blog [»Mittelalter. Interdisziplinäre Forschung und Rezeptionsgeschichte«](https://mittelalter.hypotheses.org/), Subject area: Digital Humanities (2019–2021)
 * Digital Humanities Working Group at the Max Weber Foundation (2016–2019)
 * Stakeholder panel »Wissenschaftliche Sammlungen« – DARIAH-DE, Cluster 4 (2014–2017)
+
+### Reviewer
+* German Research Foundation (German: Deutsche Forschungsgemeinschaft, DFG)
+* Federal Ministry for Research, Technology and Space (German: Bundesministerium für Forschung, Technologie und Raumfahrt, BMFTR)
+* Union of German Academies of Sciences and Humanities (German: Union der deutschen Akademien der Wissenschaften)
+* Alliance of Digital Humanities Organizations (ADHO)
+* Digital Humanities in German-speaking countries (German: Digital Humanities im deutschsprachigen Raum, DHd)
