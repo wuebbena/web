@@ -27,7 +27,7 @@ menu:
         - name: Interviews | Clips | Misc
           url: misc/
           weight: 5 
-        - name: Memberships | Committees
+        - name: Memberships | Committees | Reviewer
           url: memberships/
           weight: 6 
         - name: Employment history
