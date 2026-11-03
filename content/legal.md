@@ -54,12 +54,6 @@ Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Mein berechtigtes Interesse lieg
 
 Beim Laden der folgenden Inhalte stellt Ihr Browser eine Verbindung zu Servern der jeweiligen Anbieter her. Dabei wird mindestens Ihre IP-Adresse übermittelt, die der Anbieter benötigt, um die Inhalte auszuliefern.
 
-**jsDelivr (Programmbibliothek KaTeX)**  
-Zur Darstellung mathematischer Formeln wird die Bibliothek KaTeX über das Content Delivery Network jsDelivr ([jsdelivr.com](https://www.jsdelivr.com/)) geladen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; mein berechtigtes Interesse liegt in der korrekten und schnellen Darstellung der Inhalte. Informationen zum Datenschutz: [jsDelivr Privacy Policy](https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net).
-
-**BibBase (Literaturlisten)**  
-Auf einigen Unterseiten (Presentations, Data | Software, Interviews | Clips | Misc) werden Literaturlisten über den Dienst BibBase ([bibbase.org](https://bibbase.org/)) eingebunden. BibBase bezieht die bibliografischen Daten aus meiner öffentlichen Zotero-Bibliothek. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; mein berechtigtes Interesse liegt in der aktuellen und einheitlichen Darstellung meiner Veröffentlichungen und Vorträge.
-
 **Google Maps**  
 Auf der Seite „Location“ ist eine Karte von Google Maps eingebunden, einem Dienst der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Beim Aufruf dieser Seite werden Daten, einschließlich Ihrer IP-Adresse, an Google übermittelt und möglicherweise auf Server der Google LLC in den USA übertragen. Google ist unter dem EU-U.S. Data Privacy Framework zertifiziert. Informationen zum Datenschutz: [Google Datenschutzerklärung](https://policies.google.com/privacy).
 

@@ -58,7 +58,10 @@ params:
     ShowWordCount: false
     UseHugoToc: true
     comments: false
-    math: true
+    math: false
+    zotero:
+        userID: 918848
+        apiKey: "W9aezGBJK25EKnNB1y6Ephdl"
     profileMode:
           enabled: true
           title: Thorsten Wübbena
