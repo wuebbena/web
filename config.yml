@@ -80,7 +80,7 @@ params:
               url: projects/
             - name: Interviews | Clips | Misc
               url: misc/
-            - name: Memberships | Committees
+            - name: Memberships | Committees | Reviewer
               url: memberships/
             - name: Employment history
               url: employment/
