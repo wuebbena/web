@@ -31,7 +31,7 @@ description: "Projects"
 
 * »ConedaKOR – Docker und Dokumentation« (Funding: NFDI4Culture) (2022)
 
-* Machbarkeitsstudie zur Aufarbeitung des Archivs der Städelschule 1920-1950 (2021 – 22)
+* Machbarkeitsstudie zur Aufarbeitung des Archivs der Städelschule 1920 – 1950 (2021 – 22)
 
 * Linked Art. Einsatz der Netzwerkanalyse im Bereich der Kunstgeschichte (2022)
 
