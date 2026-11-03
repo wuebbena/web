@@ -1,70 +1,68 @@
 ---
-title: "Impressum & Datenschutz"
+title: "Legal Notice (Impressum) & Privacy"
 description: "Legal notice (Impressum) and privacy policy (Datenschutzerklärung) of thorstenwuebbena.de."
 hidemeta: true
 aliases: ["/impressum/", "/datenschutz/", "/privacy/"]
 ---
 
-*English summary: This page contains the legal notice and privacy policy required under German law. The German version is authoritative.*
+## Legal Notice (Impressum) {#legal-notice}
 
-## Impressum
-
-Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG)
+Information pursuant to § 5 of the German Digital Services Act (Digitale-Dienste-Gesetz, DDG)
 
 Thorsten Wübbena  
-c/o Leibniz-Institut für Europäische Geschichte (IEG)  
+c/o Leibniz Institute of European History (IEG)  
 Alte Universitätsstraße 19  
 55116 Mainz  
-Deutschland
+Germany
 
-**Kontakt**  
-E-Mail: [wuebbena@ieg-mainz.de](mailto:wuebbena@ieg-mainz.de)
+**Contact**  
+Email: [wuebbena@ieg-mainz.de](mailto:wuebbena@ieg-mainz.de)
 
-**Verantwortlich für den Inhalt nach § 18 Abs. 2 Medienstaatsvertrag (MStV)**  
-Thorsten Wübbena, Anschrift wie oben
+**Responsible for content pursuant to § 18(2) of the German Interstate Media Treaty (Medienstaatsvertrag, MStV)**  
+Thorsten Wübbena, address as above
 
-Diese Website ist ein privates Angebot zur Darstellung meiner wissenschaftlichen Arbeit. Sie ist kein offizielles Angebot der Hochschule Mainz oder des Leibniz-Instituts für Europäische Geschichte.
+This is a private website presenting my academic work. It is not an official website of Mainz University of Applied Sciences or of the Leibniz Institute of European History.
 
-**Haftung für Links**  
-Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Links umgehend entfernen.
+**Liability for links**  
+This website contains links to external third-party websites whose content I have no control over. The respective provider or operator is always responsible for the content of linked pages. If I become aware of any legal infringements, I will remove such links immediately.
 
 ***
 
-## Datenschutzerklärung
+## Privacy Policy (Datenschutzerklärung) {#privacy}
 
-### 1. Verantwortlicher
+### 1. Controller
 
-Verantwortlich für die Datenverarbeitung auf dieser Website im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:
+The controller responsible for data processing on this website within the meaning of the EU General Data Protection Regulation (GDPR) is:
 
-Thorsten Wübbena, c/o Leibniz-Institut für Europäische Geschichte (IEG), Alte Universitätsstraße 19, 55116 Mainz, E-Mail: [wuebbena@ieg-mainz.de](mailto:wuebbena@ieg-mainz.de)
+Thorsten Wübbena, c/o Leibniz Institute of European History (IEG), Alte Universitätsstraße 19, 55116 Mainz, Germany, email: [wuebbena@ieg-mainz.de](mailto:wuebbena@ieg-mainz.de)
 
-### 2. Allgemeines
+### 2. General information
 
-Diese Website verwendet keine Cookies, kein Tracking und keine Analysedienste. Es gibt keine Kontaktformulare, keine Kommentarfunktion und keine Benutzerkonten. Personenbezogene Daten werden nur in dem technisch notwendigen Umfang verarbeitet, der in den folgenden Abschnitten beschrieben ist.
+This website does not use cookies, tracking or analytics services. There are no contact forms, no comment functions and no user accounts. Personal data is processed only to the technically necessary extent described in the following sections.
 
-Für einige Komfortfunktionen der Seite (z. B. die Scrollposition des Menüs) wird der lokale Speicher Ihres Browsers (localStorage) genutzt. Diese Daten verbleiben auf Ihrem Gerät und werden nicht an mich oder Dritte übermittelt.
+For some convenience features (e.g. remembering the scroll position of the menu), the website uses your browser's local storage (localStorage). This data stays on your device and is not transmitted to me or to third parties.
 
-### 3. Hosting über GitHub Pages
+### 3. Hosting via GitHub Pages
 
-Diese Website wird über GitHub Pages bereitgestellt, einen Dienst der GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. Beim Aufruf der Website verarbeitet GitHub technisch notwendige Daten, insbesondere Ihre IP-Adresse, Datum und Uhrzeit des Zugriffs, die aufgerufene Seite sowie Browser- und Betriebssysteminformationen. Diese Daten werden benötigt, um die Website auszuliefern und ihre Sicherheit zu gewährleisten.
+This website is hosted on GitHub Pages, a service of GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. When you visit the website, GitHub processes technically necessary data, in particular your IP address, the date and time of access, the page requested, and browser and operating system information. This data is required to deliver the website and to ensure its security.
 
-Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Mein berechtigtes Interesse liegt in der zuverlässigen und sicheren Bereitstellung dieser Website. Eine Übermittlung in die USA ist möglich. GitHub ist unter dem EU-U.S. Data Privacy Framework zertifiziert; die Übermittlung stützt sich auf den Angemessenheitsbeschluss der EU-Kommission (Art. 45 DSGVO). Weitere Informationen: [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
+The legal basis is Art. 6(1)(f) GDPR. My legitimate interest lies in providing this website reliably and securely. Data may be transferred to the USA. GitHub is certified under the EU-U.S. Data Privacy Framework; the transfer is based on the European Commission's adequacy decision (Art. 45 GDPR). Further information: [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
-### 4. Eingebundene Inhalte und Dienste Dritter
+### 4. Embedded third-party content
 
-Beim Laden der folgenden Inhalte stellt Ihr Browser eine Verbindung zu Servern der jeweiligen Anbieter her. Dabei wird mindestens Ihre IP-Adresse übermittelt, die der Anbieter benötigt, um die Inhalte auszuliefern.
+When the following content is loaded, your browser connects to the respective provider's servers. At least your IP address is transmitted, which the provider needs to deliver the content.
 
 **Google Maps**  
-Auf der Seite „Location“ ist eine Karte von Google Maps eingebunden, einem Dienst der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Beim Aufruf dieser Seite werden Daten, einschließlich Ihrer IP-Adresse, an Google übermittelt und möglicherweise auf Server der Google LLC in den USA übertragen. Google ist unter dem EU-U.S. Data Privacy Framework zertifiziert. Informationen zum Datenschutz: [Google Datenschutzerklärung](https://policies.google.com/privacy).
+The "Location" page embeds a map from Google Maps, a service of Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. When you open this page, data including your IP address is transmitted to Google and may be transferred to servers of Google LLC in the USA. Google is certified under the EU-U.S. Data Privacy Framework. Further information: [Google Privacy Policy](https://policies.google.com/privacy).
 
-### 5. Kontakt per E-Mail
+### 5. Contact by email
 
-Wenn Sie mir eine E-Mail schreiben, verarbeite ich Ihre Angaben ausschließlich zur Bearbeitung Ihrer Anfrage. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO bzw., wenn Ihre Anfrage auf einen Vertrag oder eine vorvertragliche Maßnahme zielt, Art. 6 Abs. 1 lit. b DSGVO.
+If you send me an email, I process your details solely to handle your request. The legal basis is Art. 6(1)(f) GDPR or, if your request relates to a contract or pre-contractual measures, Art. 6(1)(b) GDPR.
 
-### 6. Ihre Rechte
+### 6. Your rights
 
-Sie haben nach der DSGVO das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) sowie das Recht, der Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO aus Gründen, die sich aus Ihrer besonderen Situation ergeben, zu widersprechen (Art. 21). Wenden Sie sich dazu einfach per E-Mail an mich.
+Under the GDPR, you have the right of access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18) and data portability (Art. 20), as well as the right to object, on grounds relating to your particular situation, to processing based on Art. 6(1)(f) GDPR (Art. 21). To exercise these rights, simply contact me by email.
 
-Sie haben außerdem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Zuständig ist zum Beispiel der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Rheinland-Pfalz, Hintere Bleiche 34, 55116 Mainz ([datenschutz.rlp.de](https://www.datenschutz.rlp.de/)).
+You also have the right to lodge a complaint with a data protection supervisory authority, for example the State Commissioner for Data Protection and Freedom of Information of Rhineland-Palatinate (Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Rheinland-Pfalz), Hintere Bleiche 34, 55116 Mainz, Germany ([datenschutz.rlp.de](https://www.datenschutz.rlp.de/)).
 
-*Stand: November 2026*
+*Last updated: November 2026*
