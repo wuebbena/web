@@ -26,5 +26,5 @@ Room 03-02
 
 #### Office location
 
-[Show on OpenStreetMap](https://www.openstreetmap.org/?mlat=50.00697&mlon=8.26892#map=19/50.00697/8.26892)
+[Show on OpenStreetMap](https://www.openstreetmap.org/?mlat=50.00697&mlon=8.26892#map=19/50.00697/8.26892)  
 [Show on Google Maps](https://www.google.com/maps/search/?api=1&query=50.00697%2C8.26892)
