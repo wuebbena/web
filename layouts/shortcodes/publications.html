@@ -55,7 +55,7 @@
 {{- end -}}
 
 {{- if $items }}
-<ol class="publications" reversed>
+<ul class="publications">
 {{- range sort $items "sortkey" "desc" }}
   {{- $p := .pub }}
   {{- $year := .year }}
