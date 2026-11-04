@@ -2,3 +2,10 @@
 public/
 resources/
 .hugo_build.lock
+# Hugo build output (GitHub Actions builds the site)
+public/
+resources/
+.hugo_build.lock
+
+# macOS
+.DS_Store
