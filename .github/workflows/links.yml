@@ -1,0 +1,55 @@
+# Weekly check of all links on the website.
+# If broken links are found, a GitHub issue with the list is opened.
+name: Check links
+
+on:
+  schedule:
+    - cron: "23 5 * * 1"   # every Monday, 05:23 UTC
+  workflow_dispatch:        # allows a manual run from the Actions tab
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  linkcheck:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.147.2
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          submodules: recursive
+
+      - name: Build site
+        run: hugo --baseURL "https://www.thorstenwuebbena.de/"
+
+      - name: Check links
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # LinkedIn and Google Scholar block automated checks, so they are skipped.
+          # 429 ("too many requests") counts as OK: the page exists, the server is just busy.
+          args: >-
+            --root-dir "${{ github.workspace }}/public"
+            --max-concurrency 4
+            --accept 200,206,429
+            --exclude "linkedin\.com"
+            --exclude "scholar\.google\.com"
+            "public/**/*.html"
+          output: ./lychee/report.md
+          fail: false
+
+      - name: Open an issue listing broken links
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v6
+        with:
+          title: Broken links found
+          content-filepath: ./lychee/report.md
+          labels: broken-links

@@ -69,6 +69,7 @@ params:
           imageUrl: "picture.jpeg"
           imageWidth: 160
           imageHeight: 160
+          imageTitle: "Portrait of Thorsten Wübbena"
           buttons:
             - name: Publications
               url: publications/
