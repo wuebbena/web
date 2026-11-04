@@ -1,0 +1,52 @@
+{{- /*
+  Renders positions from data/employment.yml.
+
+  Parameters:
+    show  "current"  -> positions without an end year
+          "previous" -> positions with an end year
+          (omit)     -> current and previous in one list
+
+  Example:
+    {{< employment show="current" >}}
+*/ -}}
+{{- $show := .Get "show" -}}
+{{- $thisYear := now.Year -}}
+{{- $all := slice -}}
+{{- range site.Data.employment -}}
+  {{- $start := int .start -}}
+  {{- $end := int (.end | default $thisYear) -}}
+  {{- $current := not .end -}}
+  {{- $sortkey := add (mul (cond $current 1 0) 100000000) (mul $start 10000) $end -}}
+  {{- $all = $all | append (dict "e" . "start" $start "end" $end "current" $current "sortkey" $sortkey) -}}
+{{- end -}}
+{{- $all = sort $all "sortkey" "desc" -}}
+
+{{- $items := $all }}
+  {{- if eq $show "current" }}{{ $items = where $all "current" true }}{{ end }}
+  {{- if eq $show "previous" }}{{ $items = where $all "current" false }}{{ end }}
+<ol class="employment-list">
+  {{- range $items }}
+    {{- $e := .e }}
+  <li>
+    <div class="el-years">{{ if .current }}since {{ .start }}{{ else if eq .start .end }}{{ .start }}{{ else }}{{ .start }}–{{ .end }}{{ end }}</div>
+    <div class="el-body">
+      <strong class="el-position">{{ $e.position }}</strong>
+      <div class="el-org">
+        {{- with $e.url }}<a href="{{ . }}">{{ $e.organisation }}</a>{{ else }}{{ $e.organisation }}{{ end }}
+        {{- with $e.unit }} · {{ . }}{{ end }}
+        {{- with $e.location }} · {{ . }}{{ end }}
+      </div>
+      {{- with $e.project }}
+      <div class="el-detail">Project: {{ with .url }}<a href="{{ . }}">{{ $e.project.title }}</a>{{ else }}{{ .title }}{{ end }}
+        {{- $bits := slice }}
+        {{- with .funder }}{{ $bits = $bits | append (printf "funded by %s" .) }}{{ end }}
+        {{- with .number }}{{ $bits = $bits | append (printf "no. %s" .) }}{{ end }}
+        {{- with $bits }} ({{ delimit . ", " }}){{ end }}
+        {{- with .partners }}<br>Partners: {{ . }}{{ end }}
+      </div>
+      {{- end }}
+      {{- with $e.parent }}<div class="el-detail">{{ . }}</div>{{ end }}
+    </div>
+  </li>
+  {{- end }}
+</ol>

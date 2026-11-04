@@ -1,0 +1,45 @@
+/* Employment page: CV-style list (layouts/shortcodes/employment.html) */
+
+/* --- CV list ------------------------------------------------------------- */
+.post-content .employment-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.post-content .employment-list li {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  margin: 0;
+  border-bottom: 1px solid var(--border);
+}
+.post-content .employment-list li:last-child {
+  border-bottom: none;
+}
+.employment-list .el-years {
+  color: var(--secondary);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.employment-list .el-position {
+  display: block;
+  line-height: 1.35;
+}
+.employment-list .el-org {
+  margin-top: 0.15rem;
+}
+.employment-list .el-detail {
+  margin-top: 0.3rem;
+  color: var(--secondary);
+  font-size: 0.9em;
+  line-height: 1.45;
+}
+
+/* --- Phones -------------------------------------------------------------- */
+@media (max-width: 600px) {
+  .post-content .employment-list li {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}

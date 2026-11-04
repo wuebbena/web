@@ -1,0 +1,71 @@
+# Positions shown on /employment/, rendered by layouts/shortcodes/employment.html
+#
+# Fields (position, organisation and start are required):
+#   position      job title
+#   organisation  institution or company
+#   url           link for the organisation
+#   unit          department, group or lab
+#   parent        umbrella organisation, e.g. a foundation or society
+#   location      city
+#   project       for project positions: { title, url, funder, number, partners }
+#   start         first year (number)
+#   end           last year (number); leave out for current positions
+#
+# A position counts as current while it has no end year. Order in this file does not matter.
+
+- position: Professor of Digital Cultural Heritage
+  organisation: Mainz University of Applied Sciences
+  url: https://www.hs-mainz.de/en/
+  location: Mainz
+  start: 2026
+
+- position: Head of the DH Lab and the research group Digitality in Historical Research
+  organisation: Leibniz Institute of European History (IEG)
+  url: https://www.ieg-mainz.de/en/
+  location: Mainz
+  start: 2019
+
+- position: Head of the Digital Humanities Department
+  organisation: German Forum for Art History Paris / Centre allemand d'histoire de l'art Paris
+  url: https://en.wikipedia.org/wiki/German_Center_for_Art_History
+  unit: Directeur de recherche Humanités numériques
+  parent: Max Weber Foundation
+  location: Paris
+  start: 2014
+  end: 2019
+
+- position: Researcher
+  organisation: Saarland University and Heidelberg University
+  project:
+    title: On the Aesthetic Realisation of Music Videos in the Context of Handheld Devices
+    url: https://gepris.dfg.de/gepris/projekt/190786127
+    funder: DFG
+    number: "190786127"
+  start: 2011
+  end: 2014
+
+- position: Founding partner
+  organisation: Coneda Entrepreneurial Company
+  url: https://www.wikidata.org/wiki/Q42365511
+  location: Frankfurt am Main
+  start: 2009
+  end: 2020
+
+- position: Researcher
+  organisation: Goethe University Frankfurt
+  project:
+    title: "Sandrart.net. A net-based research platform on the history of art and culture in the 17th century"
+    url: https://sandrart.net/en/
+    funder: DFG
+    number: "30903728"
+    partners: KHI Florence (MPI), Städel Museum, Bibliotheca Hertziana Rome (MPI), Herzog August Library Wolfenbüttel
+  start: 2007
+  end: 2012
+
+- position: Researcher
+  organisation: Goethe University Frankfurt
+  url: https://de.wikipedia.org/wiki/Kunstgeschichtliches_Institut_der_Johann_Wolfgang_Goethe-Universit%C3%A4t_Frankfurt_am_Main
+  unit: Institute of Art History
+  location: Frankfurt am Main
+  start: 2000
+  end: 2019
