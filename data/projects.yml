@@ -1,0 +1,218 @@
+# Projects shown on /projects/, rendered by layouts/shortcodes/projects.html
+#
+# Fields (only title and start are required):
+#   title     short name of the project
+#   subtitle  full title or one-line description
+#   url       project website
+#   funder    funding body / programme
+#   partners  partner institutions
+#   role      your role, e.g. "Principal investigator", "Co-PI", "Coordinator", "Member"
+#   start     first year (number)
+#   end       last year (number); leave out for open-ended projects
+#   status    optional override: "ongoing" or "finished"
+#
+# Without "status", a project counts as ongoing while it has no end year or its end year
+# is the current year or later. It moves to "Finished" automatically at the next build.
+#
+# Order in this file does not matter: ongoing projects are sorted by start year,
+# finished projects by end year (newest first).
+
+# --- Ongoing -----------------------------------------------------------------
+
+- title: ForNet
+  subtitle: Forgeries and Networks. The »Mittheilungen des Museen-Verbandes« and counterfeiting networks in the twentieth Century
+  url: https://forgeries-and-networks.github.io/ForNetWeb/
+  funder: DFG
+  start: 2024
+  end: 2027
+
+- title: LivArch
+  subtitle: "Documenting Russia’s war against Ukraine: The challenges of living archives for historical knowledge production"
+  url: https://www.ieg-mainz.de/research/research-projects/livarch-die-dokumentation-von-russlands-krieg-gegen-die-ukraine-die-herausforderungen-von-lebenden-archiven-fuer-die-historische-wissensproduktion/
+  funder: Leibniz Cooperative Excellence
+  start: 2024
+  end: 2027
+
+- title: HERMES
+  subtitle: Humanities Education in Research, Data, and Methods
+  url: https://hermes-hub.de/
+  funder: Federal Ministry of Research, Technology and Space (BMFTR), Programme for the establishment of data competence centres for the scientific community
+  start: 2023
+  end: 2026
+
+- title: NFDI4Memory
+  subtitle: Consortium for the historically oriented humanities in the National Research Data Infrastructure (NFDI)
+  url: https://4memory.de/
+  funder: DFG
+  start: 2023
+  end: 2028
+
+- title: ConedaKOR
+  subtitle: Open-source graph-based database system for images and cultural heritage data
+  url: https://github.com/coneda/kor
+  start: 2009
+
+# --- Finished ----------------------------------------------------------------
+
+- title: ConedaKOR-StatServ
+  subtitle: Entwicklung eines nachhaltigen, statischen Services für ConedaKOR-Instanzen
+  url: https://dhlab.hypotheses.org/8265
+  funder: NFDI4Culture
+  start: 2025
+  end: 2025
+
+- title: DigiKAR
+  subtitle: Digitale Kartenwerkstatt Altes Reich
+  url: https://digikar.eu/
+  funder: Leibniz Cooperative Excellence
+  start: 2021
+  end: 2024
+
+- title: FriVer+
+  subtitle: Europäische Friedensverträge der Vormoderne online in Daten
+  url: https://friedensvertraege.ieg-mainz.de/
+  funder: Text+
+  start: 2023
+  end: 2023
+
+- title: HERMES (conceptual design project)
+  subtitle: Humanities Education in Research, Data and Methods
+  start: 2022
+  end: 2023
+
+- title: Bomber's Baedeker
+  url: https://github.com/ieg-dhr/bombers_baedeker
+  start: 2022
+  end: 2024
+
+- title: QTEI
+  subtitle: Quick TEI
+  url: https://github.com/ieg-dhr/QTEI
+  start: 2022
+  end: 2024
+
+- title: ConedaKOR – Docker und Dokumentation
+  funder: NFDI4Culture
+  start: 2022
+  end: 2022
+
+- title: Machbarkeitsstudie zur Aufarbeitung des Archivs der Städelschule 1920–1950
+  start: 2021
+  end: 2022
+
+- title: Linked Art
+  subtitle: Einsatz der Netzwerkanalyse im Bereich der Kunstgeschichte
+  start: 2022
+  end: 2022
+
+- title: RESILIENCE
+  subtitle: "REligious Studies Infrastructure: tooLs, Innovation, Experts, conNections and Centers"
+  funder: EU Horizon 2020 (INFRADEV)
+  start: 2020
+  end: 2022
+
+- title: NFDI4Memory (consortium initiative)
+  subtitle: Konsortialinitiative für historisch arbeitende Geisteswissenschaften in der Nationalen Forschungsdateninfrastruktur (NFDI)
+  start: 2020
+  end: 2023
+
+- title: ReIReS
+  subtitle: Research Infrastructure on Religious Studies
+  funder: EU Horizon 2020 (INFRAIA)
+  start: 2020
+  end: 2021
+
+- title: RETOPEA
+  subtitle: Religious Toleration and Peace
+  funder: EU Horizon 2020 (Research & Innovation)
+  start: 2019
+  end: 2023
+
+- title: similARiTy
+  subtitle: Entwicklung eines lightweight-tools zur Bildähnlichkeitssuche
+  start: 2019
+  end: 2019
+
+- title: Die Porträtsammlung der Frankfurter Patrizierfamilie Holzhausen
+  subtitle: Gemälde und Druckgraphik aus kunst- und kulturhistorischer Sicht
+  start: 2018
+  end: 2019
+
+- title: Wikidata x ConedaKOR
+  subtitle: Anwendungsmöglichkeiten für Forschungsprojekte im Bereich Digital Cultural Heritage
+  start: 2018
+  end: 2019
+
+- title: ARCHITRAVE
+  subtitle: Kunst und Architektur in Paris und Versailles im Spiegel deutscher Reiseberichte des Barock (Online-Edition)
+  start: 2017
+  end: 2019
+
+- title: Quartier Richelieu
+  subtitle: Wissensvisualisierung zu Pariser Ausstattungen während des Ancien Régime
+  start: 2016
+  end: 2019
+
+- title: KOR as a service
+  subtitle: Entwicklung einer modellhaften Lösung zum Umgang mit der nachhaltigen Betreuung von wissenschaftlicher Software
+  start: 2016
+  end: 2017
+
+- title: Palais Beauharnais-Online
+  start: 2016
+  end: 2018
+
+- title: La Galerie Pierre
+  subtitle: Online-Ausstellung
+  start: 2016
+  end: 2016
+
+- title: Relaunch der Website des DFK Paris
+  start: 2015
+  end: 2016
+
+- title: Forschungs- und Dokumentationsstelle Curatorial Studies
+  start: 2012
+  end: 2013
+
+- title: Zur ästhetischen Umsetzung von Musikvideos im Kontext von Handhelds
+  funder: DFG
+  partners: Universität des Saarlandes, Universität Heidelberg
+  start: 2011
+  end: 2014
+
+- title: OKA-Online
+  subtitle: Digitale Aufarbeitung des »Oswin-Köhler-Archivs«
+  start: 2010
+  end: 2012
+
+- title: eWOC
+  subtitle: eLearning Workout for OpenData and Copyright
+  start: 2011
+  end: 2011
+
+- title: Kompetenzerwerb durch Partizipation
+  subtitle: Vermittlung der Grundlagen wissenschaftlichen Sammelns, Ordnens und Verwaltens von kulturellen Gütern mit dem Datenbanksystem ConedaKOR
+  start: 2010
+  end: 2011
+
+- title: Sandrart.net
+  subtitle: Eine netzbasierte Forschungsplattform zur Kunst- und Kulturgeschichte des 17. Jahrhunderts
+  funder: DFG
+  start: 2007
+  end: 2012
+
+- title: Kleinbilddias des Kunstgeschichtlichen Instituts
+  subtitle: Digitalisierung und Verfügbarmachung der Sammlung von Kleinbilddias des Kunstgeschichtlichen Instituts der Goethe-Universität
+  start: 2007
+  end: 2009
+
+- title: DILPS-Erweiterung
+  subtitle: Erweiterung von »DILPS – Distributed Image Library Processing System« um Wiki- und WebCT-Unterstützung, zum kooperativen Austausch sowie für die Durchführung von Selbsttests im Sinne eines Self Assessment
+  start: 2006
+  end: 2006
+
+- title: DILPS
+  subtitle: Distributed Image Library Processing System. Entwicklung eines vernetzten Open-Source-Bilddatenbanksystems
+  start: 2002
+  end: 2008

@@ -1,0 +1,47 @@
+{{- /*
+  Renders projects from data/projects.yml.
+
+  Parameters:
+    status  "ongoing" or "finished" (omit to show all)
+
+  A project is ongoing if its "status" field says so, or (without "status") if it has
+  no end year or its end year is the current year or later.
+
+  Example:
+    {{< projects status="ongoing" >}}
+*/ -}}
+{{- $want := .Get "status" -}}
+{{- $thisYear := now.Year -}}
+{{- $items := slice -}}
+{{- range site.Data.projects -}}
+  {{- $start := int (.start | default 0) -}}
+  {{- $end := int (.end | default 0) -}}
+  {{- $status := .status | default (cond (or (not .end) (ge $end $thisYear)) "ongoing" "finished") -}}
+  {{- if or (not $want) (eq $want $status) -}}
+    {{- $sortkey := cond (eq $status "ongoing")
+          (add (mul $start 10000) $end)
+          (add (mul $end 10000) $start) -}}
+    {{- $items = $items | append (dict "p" . "start" $start "end" $end "status" $status "sortkey" $sortkey) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $items }}
+<ul class="projects">
+{{- range sort $items "sortkey" "desc" }}
+  {{- $p := .p }}
+  {{- $years := "" }}
+  {{- if not $p.end }}{{ $years = printf "since %d" .start }}
+  {{- else if eq .start .end }}{{ $years = printf "%d" .start }}
+  {{- else }}{{ $years = printf "%d–%d" .start .end }}{{ end }}
+  {{- $meta := slice $years }}
+  {{- with $p.role }}{{ $meta = $meta | append (printf "Role: %s" .) }}{{ end }}
+  {{- with $p.funder }}{{ $meta = $meta | append (printf "Funding: %s" .) }}{{ end }}
+  {{- with $p.partners }}{{ $meta = $meta | append (printf "Partners: %s" .) }}{{ end }}
+  <li>
+    <strong>{{ with $p.url }}<a href="{{ . }}">{{ $p.title }}</a>{{ else }}{{ $p.title }}{{ end }}</strong>
+    {{- with $p.subtitle }} – {{ . }}{{ end }}
+    <br><small>{{ delimit $meta " · " }}</small>
+  </li>
+{{- end }}
+</ul>
+{{- end }}
