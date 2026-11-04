@@ -27,6 +27,7 @@
   color: var(--primary);
   text-decoration: underline;
 }
+/* leave a little space above a section when jumping to it */
 .post-content h2[id] {
   scroll-margin-top: 1.5rem;
 }
