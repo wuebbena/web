@@ -1,0 +1,17 @@
+{{- /*
+  Row of jump links to the page's "##" sections, shown under the page title.
+  Appears only when the page has at least 3 such sections.
+  Switch off for a single page with  jumpLinks: false  in its front matter.
+*/ -}}
+{{- if ne (.Param "jumpLinks") false }}
+  {{- $sections := findRESubmatch `<h2 id="([^"]+)"[^>]*>(.*?)</h2>` .Content }}
+  {{- if ge (len $sections) 3 }}
+<nav class="jump-links" aria-label="Sections on this page">
+  <ul>
+    {{- range $sections }}
+    <li><a href="#{{ index . 1 }}">{{ index . 2 | plainify | htmlUnescape }}</a></li>
+    {{- end }}
+  </ul>
+</nav>
+  {{- end }}
+{{- end }}

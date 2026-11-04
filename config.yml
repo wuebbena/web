@@ -53,7 +53,7 @@ params:
     ShowAllPagesInArchive: false
     MainSections: ["publications", "presentations", "data", "projects", "misc", "memberships", "employment"]
     ShowToc: false
-    disableScrollToTop: true
+    disableScrollToTop: false
     TocOpen: true
     ShowWordCount: false
     UseHugoToc: true
