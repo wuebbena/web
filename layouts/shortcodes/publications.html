@@ -6,6 +6,9 @@
                 at build time (site.Params.zotero.userID / site.Params.zotero.apiKey).
     (omit)      uses data/publications.json (CSL-JSON, e.g. a Better BibTeX auto-export)
 
+  Layout (optional):
+    group   "none" -> one flat list instead of year subheadings (default: grouped by year)
+
   Filters (optional, work with both sources):
     types   comma-separated CSL types, e.g. "article-journal,chapter,paper-conference"
     edited  "only"    -> only entries with editors but no authors (edited volumes)
@@ -55,8 +58,23 @@
 {{- end -}}
 
 {{- if $items }}
+{{- $sorted := sort $items "sortkey" "desc" }}
+{{- $groupByYear := ne ($.Get "group") "none" }}
+{{- $groups := slice }}
+{{- if $groupByYear }}
+  {{- range $sorted }}{{ if not (in $groups .year) }}{{ $groups = $groups | append .year }}{{ end }}{{ end }}
+{{- else }}
+  {{- $groups = slice "all" }}
+{{- end }}
+{{- range $groups }}
+{{- $g := . }}
+{{- $groupItems := $sorted }}
+{{- if $groupByYear }}
+  {{- $groupItems = where $sorted "year" $g }}
+<h3 class="publications-year">{{ if $g }}{{ $g }}{{ else }}Undated{{ end }}</h3>
+{{- end }}
 <ul class="publications">
-{{- range sort $items "sortkey" "desc" }}
+{{- range $groupItems }}
   {{- $p := .pub }}
   {{- $year := .year }}
   {{- $people := $p.author | default $p.editor | default $p.director | default (index $p "script-writer") | default $p.interviewer }}
@@ -95,8 +113,11 @@
   {{- with $p.URL }}{{ $kv = $kv | append (printf "rft_id=%s" (urlquery .)) }}{{ end }}
 
   <li id="{{ $p.id }}">
-    {{ with $names }}{{ delimit . "; " }} {{ end }}{{ if and (not $p.author) $p.editor }}({{ if gt (len $p.editor) 1 }}eds.{{ else }}ed.{{ end }}) {{ end }}
-    {{- with $year }}({{ . }}){{ end }}:
+    {{- $lead := slice }}
+    {{- with $names }}{{ $lead = $lead | append (delimit . "; ") }}{{ end }}
+    {{- if and (not $p.author) $p.editor }}{{ $lead = $lead | append (cond (gt (len $p.editor) 1) "(eds.)" "(ed.)") }}{{ end }}
+    {{- with $year }}{{ $lead = $lead | append (printf "(%d)" .) }}{{ end }}
+    {{ with $lead }}{{ delimit . " " }}:{{ end }}
     {{ if $url }}<a href="{{ $url }}"><cite>{{ $p.title }}</cite></a>{{ else }}<cite>{{ $p.title }}</cite>{{ end }}
     {{- with $p.genre }} [{{ . }}]{{ end }}.
     {{- with $container }} In: <em>{{ . }}</em>{{ else }}{{ with $event }} {{ . }}{{ with $eventPlace }}, {{ . }}{{ end }}.{{ end }}{{ end }}
@@ -107,5 +128,6 @@
     <span class="Z3988" title="{{ delimit $kv "&" }}"></span>
   </li>
 {{- end }}
-</ol>
+</ul>
+{{- end }}
 {{- end }}
