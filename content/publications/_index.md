@@ -3,8 +3,6 @@ title: "Publications"
 description: "Publications by Thorsten Wübbena: articles, books, edited volumes, blog posts and digital editions."
 ---
 
-All publications as BibTeX: [publications.bib](/publications.bib)
-
 ## Articles and research papers
 
 {{< publications collection="VFPFRVA7" >}}
