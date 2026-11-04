@@ -7,24 +7,24 @@ All publications as BibTeX: [publications.bib](/publications.bib)
 
 ## Articles and research papers
 
-{{< publications types="article-journal,chapter,paper-conference" >}}
+{{< publications collection="VFPFRVA7" >}}
 
 ***
 ## Books
 
-{{< publications types="book" edited="exclude" >}}
+{{< publications collection="795GZXK3" >}}
 
 ***
 ## Edited volumes
 
-{{< publications types="book" edited="only" >}}
+{{< publications collection="EQZGA25H" >}}
 
 ***
 ## Blog posts
 
-{{< publications types="post-weblog" >}}
+{{< publications collection="MVJSQ6MG" >}}
 
 ***
 ## Digital editions
 
-{{< publications types="webpage" genre="Online-Edition" >}}
+{{< publications collection="9Y78QUKP" >}}
