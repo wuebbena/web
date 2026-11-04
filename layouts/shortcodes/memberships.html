@@ -1,0 +1,47 @@
+{{- /*
+  Renders data/memberships.yml. Uses the same styles as the Employment page
+  (assets/css/extended/employment.css).
+
+  Parameters:
+    show  "current"  -> current memberships and committees
+          "previous" -> previous ones
+          "reviewer" -> list of organisations you review for
+
+  Example:
+    {{< memberships show="current" >}}
+*/ -}}
+{{- $show := .Get "show" -}}
+{{- $data := site.Data.memberships -}}
+
+{{- if eq $show "reviewer" }}
+<ul class="reviewer-list">
+  {{- range $data.reviewer }}
+  <li>{{ if .url }}<a href="{{ .url }}">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</li>
+  {{- end }}
+</ul>
+{{- else }}
+  {{- $thisYear := now.Year -}}
+  {{- $all := slice -}}
+  {{- range $data.positions -}}
+    {{- $start := int .start -}}
+    {{- $end := int (.end | default 0) -}}
+    {{- $status := .status | default (cond (or (not .end) (ge $end $thisYear)) "current" "previous") -}}
+    {{- $sortkey := add (mul (cond (eq $status "current") 1 0) 100000000) (mul $start 10000) $end -}}
+    {{- $all = $all | append (dict "e" . "start" $start "end" $end "status" $status "sortkey" $sortkey) -}}
+  {{- end -}}
+  {{- $items := sort $all "sortkey" "desc" -}}
+  {{- with $show }}{{ $items = where $items "status" . }}{{ end }}
+<ol class="employment-list">
+  {{- range $items }}
+    {{- $e := .e }}
+  <li>
+    <div class="el-years">{{ if not $e.end }}since {{ .start }}{{ else if eq .start .end }}{{ .start }}{{ else }}{{ .start }}–{{ .end }}{{ end }}</div>
+    <div class="el-body">
+      <strong class="el-position">{{ $e.role }}</strong>
+      <div class="el-org">{{ with $e.url }}<a href="{{ . }}">{{ $e.organisation }}</a>{{ else }}{{ $e.organisation }}{{ end }}</div>
+      {{- with $e.detail }}<div class="el-detail">{{ . }}</div>{{ end }}
+    </div>
+  </li>
+  {{- end }}
+</ol>
+{{- end }}

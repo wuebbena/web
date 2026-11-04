@@ -1,0 +1,91 @@
+# Shown on /memberships/, rendered by layouts/shortcodes/memberships.html
+#
+# positions: memberships, boards, committees
+#   role          your role, e.g. "Board member", "Member"
+#   organisation  body, board or project
+#   url           link for the organisation
+#   detail        optional extra line, e.g. a project number or subject area
+#   start         first year (number)
+#   end           last year (number); leave out for open-ended memberships
+#   status        optional override: "current" or "previous"
+#
+# Without "status", an entry is current while it has no end year or its end year is
+# the current year or later; after that it moves to "Previous" automatically.
+#
+# reviewer: organisations you review for
+#   name          organisation
+#   url           optional link
+
+positions:
+
+  # --- Current ---------------------------------------------------------------
+
+  - role: Member of the Expert Advisory Board
+    organisation: DFG project »Das digitale Archiv der Städelschule (1920–1950)«
+    url: https://staedelschule.de/de/research/projects/digital-archive-project-1920-1950/
+    detail: DFG project no. 523868108
+    start: 2024
+    end: 2026
+
+  - role: Board member
+    organisation: prometheus – Das verteilte digitale Bildarchiv für Forschung und Lehre e. V.
+    url: https://prometheus-bildarchiv.de/en/index
+    start: 2022
+
+  - role: Representative of the IEG
+    organisation: Humanities and Cultural Studies Research Infrastructures e.V.
+    url: https://forschungsinfrastrukturen.de/en/
+    start: 2021
+
+  - role: Member
+    organisation: mainzed – Mainz Centre for Digitality in the Humanities and Cultural Studies
+    url: https://mainzed.org/
+    start: 2019
+
+  - role: Member
+    organisation: DHd – Digital Humanities in German-speaking countries
+    url: https://digitalhumanities.de/en/
+    start: 2013
+
+  - role: Member
+    organisation: Working group »Digitale Kunstgeschichte«
+    url: https://digitale-kunstgeschichte.de/
+    start: 2012
+
+  # --- Previous --------------------------------------------------------------
+
+  - role: Member of the Digital Humanities Specialists Board
+    organisation: Shared Churches in Early Modern Europe
+    url: https://sharedchurches.arizona.edu/
+    start: 2022
+    end: 2026
+    status: previous
+
+  - role: Member
+    organisation: EOSC Future User Group
+    start: 2021
+    end: 2023
+
+  - role: Member of the editorial team
+    organisation: Science blog »Mittelalter. Interdisziplinäre Forschung und Rezeptionsgeschichte«
+    url: https://mittelalter.hypotheses.org/
+    detail: "Subject area: Digital Humanities"
+    start: 2019
+    end: 2021
+
+  - role: Member
+    organisation: Digital Humanities Working Group, Max Weber Foundation
+    start: 2016
+    end: 2019
+
+  - role: Member of the stakeholder panel »Wissenschaftliche Sammlungen«
+    organisation: DARIAH-DE, Cluster 4
+    start: 2014
+    end: 2017
+
+reviewer:
+  - name: German Research Foundation (DFG)
+  - name: Federal Ministry of Research, Technology and Space (BMFTR)
+  - name: Union of German Academies of Sciences and Humanities
+  - name: Alliance of Digital Humanities Organizations (ADHO)
+  - name: Digital Humanities in German-speaking countries (DHd)
